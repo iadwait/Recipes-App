@@ -12,6 +12,9 @@ body{
 }
 
 .container_Mob{
+    /* need to debug why flex align center is not working hence used position relative */
+    position: relative;
+    top: 35px; 
     width: 400px;
     background-color: white;
 }
@@ -71,4 +74,57 @@ header button{
     padding: 5px 0;
     text-align: center;
     /* font-size: 0.9rem; */
+}
+
+.meals{
+    /* background-color: tomato; */
+}
+
+.meal{
+    margin: 10px;
+    background-color: rgb(219, 219, 219);
+}
+
+.meal-header{
+    position: relative;
+}
+
+.meal-header .random{
+    position: absolute;
+    top: 8px;
+    background-color: tomato;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.meal-header img{
+    width: 100%;
+    height: 300px;
+}
+
+.meal-body{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.meal-body h4{
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
+
+.meal-body .fav-btn{
+    margin: 5px 0;
+    margin-right: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: rgb(197, 188, 188);
+    background-color: transparent;
+    border: none;
+}
+
+.meal-body .fav-btn.active{
+    color: tomato;
 }
