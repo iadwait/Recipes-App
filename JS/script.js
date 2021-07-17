@@ -1,4 +1,4 @@
-const meals = document.getElementById('meal');
+const meals = document.getElementById('meals');
 
 getRandomMeal()
 // getMealbySearch("Chocolate");
@@ -37,7 +37,12 @@ function addMeal(mealData, random = false) {
                     <h4>${mealData.strMeal}</h4>
                     <button class="fav-btn"><i class="fas fa-heart"></i></button>
                      </div>
-               
     `
+
+    const btn = meal.querySelector('.meal-body .fav-btn'); 
+    btn.addEventListener('click', () => {
+       btn.classList.toggle('active'); 
+    });
+
     meals.appendChild(meal);
 }
