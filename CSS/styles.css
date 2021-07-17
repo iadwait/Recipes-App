@@ -39,4 +39,36 @@ header button{
     padding: 10px;
 }
 
+.container_FavMeals{
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(248, 233, 237);
+}
 
+.fav_meals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Remove Bullets */
+    list-style-type: none;
+    padding: 0px; 
+}
+
+.fav_meals li{
+    width: 85px;
+}
+
+.fav_meals li img{
+    /* background-color: red; */
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    /* object-fit: cover; */
+    /* border: 0.5px solid black; */
+}
+
+.fav_meals li spam{
+    padding: 5px 0;
+    text-align: center;
+    /* font-size: 0.9rem; */
+}
